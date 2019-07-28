@@ -1,0 +1,15 @@
+input_features:
+    -
+        name: id_code
+        type: image
+        preprocessing:
+          height: 224
+          width: 224
+          resize_method: interpolate
+          scaling: pixel_normalization
+        encoder: stacked_cnn
+
+output_features:
+    -
+        name: diagnosis
+        type: category
